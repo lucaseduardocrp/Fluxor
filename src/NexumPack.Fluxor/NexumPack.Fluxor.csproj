@@ -1,0 +1,35 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>netstandard2.1</TargetFramework>
+		<Nullable>enable</Nullable>
+		<PackageId>NexumPack.Fluxor</PackageId>
+		<Product>Fluxor</Product>
+		<Version>1.0.1</Version>
+		<Title>NexumPack.Fluxor</Title>
+		<Description>Uma biblioteca leve e extensível para gerenciamento de fluxo de dados e eventos em aplicações .NET, inspirada no MediatR. Ideal para arquiteturas baseadas em CQRS e separação de responsabilidades.</Description>
+		<Company>NexumPack</Company>
+		<Authors>Lucas Eduardo</Authors>
+		<Copyright>Copyright © 2025 Lucas Eduardo Crespo de Carvalho</Copyright>
+		<RepositoryUrl>https://github.com/lucaseduardocrp/Fluxor</RepositoryUrl>
+		<PackageLicenseExpression>MIT</PackageLicenseExpression>
+		<RepositoryType>git</RepositoryType>
+		<PackageTags>fluxor mediator bus nexum dotnet</PackageTags>
+		<PackageReleaseNotes>Versão inicial com suporte básico a containers de estado e injeção de dependência.</PackageReleaseNotes>
+		<PackageIcon>fluxor-icon.png</PackageIcon>
+		<PackageReadmeFile>README.md</PackageReadmeFile>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="9.0.4" />
+		<None Include="..\..\README.md">
+			<Pack>true</Pack>
+			<PackagePath>README.md</PackagePath>
+		</None>
+		<None Include="..\..\assets\fluxor-icon.png">
+			<Pack>true</Pack>
+			<PackagePath>fluxor-icon.png</PackagePath>
+		</None>
+	</ItemGroup>
+
+</Project>
